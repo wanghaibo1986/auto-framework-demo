@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite
+	verbose="10"
+	name="bjj-template"
+	parallel="false"
+	thread-count="10"
+	preserve-order="true"
+	allow-return-values="true">
+	
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	
+	<!-- 
+	<parameter
+		name=""
+		value="" />
+	 -->
+	
+	<test name="testname" verbose="10" preserve-order="true" >
+	    <groups>
+		    <run>
+		        <exclude name="groupname"></exclude>
+		    </run>
+		</groups>
+		<packages>
+			<package name="com.bjjdemo.test.mytestclassname" />
+		</packages> 
+	</test>
+
+	<!-- <test name="temp-test" verbose="10" preserve-order="true" >
+	    <method-selectors>
+            <method-selector>
+                <script language="beanshell"><![CDATA[
+                groups.containsKey("baijingjiao") && groups.containsKey("CUSTOM_ISSUE")
+                ]]>
+                </script>
+            </method-selector>
+        </method-selectors>
+		
+		<packages>
+			<package name="com.everbridge.test.portal.demo" />
+		</packages> 
+	</test> -->
+	
+	<!-- 
+	<suite-files>
+	    <suite-file path="testngxml/member_portal/Testng-BJJ-MemberPortal-qa1-Remote.xml"></suite-file>
+	</suite-files>
+	 -->
+	
+</suite>
