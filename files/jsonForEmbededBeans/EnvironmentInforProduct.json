@@ -1,0 +1,7 @@
+{
+	"environment" : "product",
+	"managerPortalUrl" : "https://manager.everbridge.net",
+	"apiUrl" : "https://api.everbridge.net/rest",
+	"ebadminUrl" : "https://ebadmin.everbridge.net",
+	"memberPortalUrl" : "https://member.everbridge.net"
+}

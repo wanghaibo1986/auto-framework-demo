@@ -1,0 +1,7 @@
+{
+	"environment" : "qa1",
+	"managerPortalUrl" : "https://manager-qa1.everbridge.net",
+	"apiUrl" : "https://api-qa1.everbridge.net/rest",
+	"ebadminUrl" : "https://ebadmin-qa1.everbridge.net",
+	"memberPortalUrl" : "https://member-qa1.everbridge.net"
+}

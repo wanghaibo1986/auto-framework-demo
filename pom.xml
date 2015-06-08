@@ -5,8 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>automation</name>
   <description>automation</description>
-  
-  <build>
+		<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -24,51 +23,115 @@
 				<version>2.18</version>
 				<configuration>
 					<skip>true</skip>
-					<reportsDirectory>${basedir}/test-output</reportsDirectory>
-					<suiteXmlFiles>
-						<!-- <suiteXmlFile>testngxml/Testng-All.xml</suiteXmlFile> -->
-						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
-					</suiteXmlFiles>
-					<properties>
-						<browser_value>${browser_value}</browser_value>
-						<selenium_hub>${selenium_hub}</selenium_hub>
-						<screenshot_linkpath>${screenshot_linkpath}</screenshot_linkpath>
-					</properties>
 				</configuration>
 			</plugin>
 		</plugins>
-		<sourceDirectory>${basedir}/src/main/java</sourceDirectory>
-		<testSourceDirectory>${basedir}/src/test/java</testSourceDirectory>
+		<sourceDirectory>${basedir}/src</sourceDirectory>
 		<outputDirectory>${basedir}/target/test-classes</outputDirectory>
-		<testOutputDirectory>${basedir}/target/test-classes</testOutputDirectory>
+		<resources>
+			<resource>
+				<directory>${basedir}/src/com/everbridge/mongodb/ebsuite/files</directory>
+				<targetPath>src/com/everbridge/mongodb/ebsuite/files</targetPath>
+			</resource>
+			<resource>
+				<directory>${basedir}/src/com/everbridge/phone/twilio</directory>
+				<targetPath>src/com/everbridge/phone/twilio</targetPath>
+			</resource>
+		</resources>
 	</build>
-	
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<!--restlet.version>2.1-RC4</restlet.version -->
-		<!--spring-xml.version>2.1.0.RELEASE</spring-xml.version -->
-	</properties>
-	
 	<dependencies>
-		
 		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>6.1.1</version>
-			<scope>test</scope>
+		    <groupId>org.testng</groupId>
+		    <artifactId>testng</artifactId>
+		    <version>6.8.21</version>
 		</dependency>
-		
 		<dependency>
 			<groupId>org.uncommons</groupId>
 			<artifactId>reportng</artifactId>
 			<version>1.1.4</version>
 		</dependency>
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>bjjlistener</groupId>
+			<artifactId>testng.bjjlistener</artifactId>
+			<version>1.0</version>
+			<systemPath>${basedir}/mylibs/BJJListener-3.0.jar</systemPath>
+			<scope>system</scope>
+		</dependency>
 		
 		<dependency>
-		     <groupId>org.seleniumhq.selenium</groupId>
-		     <artifactId>selenium-java</artifactId>
-		     <version>2.45.0</version>
-		</dependency>  
-
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-server</artifactId>
+			<version>2.45.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>javax.mail</groupId>
+		    <artifactId>javax.mail-api</artifactId>
+		    <version>1.5.3</version>
+		</dependency>
+		<dependency>
+		  <groupId>io.appium</groupId>
+		  <artifactId>java-client</artifactId>
+		  <version>2.2.0</version>
+		  <exclusions>
+		    <exclusion>
+		      <groupId>org.seleniumhq.selenium</groupId>
+		      <artifactId>selenium-java</artifactId>
+		    </exclusion>
+		  </exclusions>
+		</dependency>
+		
+		<dependency>
+		  <groupId>org.seleniumhq.selenium</groupId>
+		  <artifactId>selenium-java</artifactId>
+		  <version>2.45.0</version>
+		</dependency>
+		
+		<dependency>
+	        <groupId>org.mongodb</groupId>
+	        <artifactId>mongo-java-driver</artifactId>
+	        <version>2.13.1</version>
+    	</dependency>
+    	<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.5.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.5.3</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.mongodb.morphia</groupId>
+			<artifactId>morphia</artifactId>
+			<version>1.0.0-rc0</version>
+		</dependency>
+		<dependency>
+		  <groupId>org.apache.httpcomponents</groupId>
+		  <artifactId>httpcore</artifactId>
+		  <version>4.4.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.4.1</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.10</version>
+		</dependency>
+		
 	</dependencies>
 </project>

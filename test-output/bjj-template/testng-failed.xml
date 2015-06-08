@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" verbose="10" name="Failed suite [bjj-template]" allow-return-values="true">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Default test(failed)">
+    <classes>
+      <class name="beansRef.Demo">
+        <methods>
+          <include name="addAccount"/>
+          <include name="addOrg"/>
+        </methods>
+      </class> <!-- beansRef.Demo -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [bjj-template] -->

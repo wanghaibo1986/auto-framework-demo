@@ -1,0 +1,21 @@
+{
+	"qa1Config" : {
+		"dbName" : "coredb",
+		"userName" : "coredbapp",
+		"password" : "N1n3y3ars",
+		"serverAndPort" : "10.67.42.122:27017"
+	},
+	"localConfig" : {
+		"dbName" : "test",
+		"userName" : "",
+		"password" : "",
+		"serverAndPort" : "127.0.0.1:27017"
+	},
+	"automationConfig" : {
+		"dbName" : "automation",
+		"userName" : "",
+		"password" : "",
+		"serverAndPort" : ""
+	},
+	"defaultDB" : "localConfig"
+}

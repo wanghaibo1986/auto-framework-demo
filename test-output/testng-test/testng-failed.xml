@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" verbose="10" name="Failed suite [testng-test]" allow-return-values="true">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="testnglistener.ExecutionListener1"/>
+    <listener class-name="testnglistener.ExecutionListener2"/>
+  </listeners>
+  <test name="testname(failed)">
+    <groups>
+      <run>
+        <exclude name="groupname"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testnglistener.tests.Test1">
+        <methods>
+          <include name="verify_for_Test1"/>
+        </methods>
+      </class> <!-- testnglistener.tests.Test1 -->
+      <class name="testnglistener.tests.Test2">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- testnglistener.tests.Test2 -->
+    </classes>
+  </test> <!-- testname(failed) -->
+</suite> <!-- Failed suite [testng-test] -->

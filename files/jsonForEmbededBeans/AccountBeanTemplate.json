@@ -1,0 +1,35 @@
+{
+	"environment" : "qa1",
+	"account" : "account-20150210140125-qa1",
+	"accountId" : "888409690210388",
+	"accountAdmins" : [
+		{
+			"assignment" : "incidents",
+			"userId" : "888409690210371",
+			"userName" : "aadmin-20150210140125-qa1",
+			"password" : "QWEqwe123",
+			"firstName" : "fn-aadmin-20150210140125-qa1",
+			"lastName" : "ln-aadmin-20150210140125-qa1"
+		},
+		{
+			"assignment" : "settings",
+			"userId" : "888409690210417",
+			"userName" : "aadmin-20150210140125-qa1-2",
+			"password" : "QWEqwe123",
+			"firstName" : "fn-20150210140125-qa1-2",
+			"lastName" : "ln-20150210140125-qa1-2"
+		}
+	],
+	"orgs" : [
+		{
+			"assignment" : "incidents",
+			"orgId" : "888409690210403",
+			"orgName" : "org-20150210140125-qa1"
+		},
+		{
+			"assignment" : "settings",
+			"orgId" : "448605039100037",
+			"orgName" : "org-for-settings"
+		}
+	]
+}

@@ -1,0 +1,35 @@
+{
+	"environment" : "qa2",
+	"account" : "account-qa2-1",
+	"accountId" : "888409690210388",
+	"accountAdmins" : [
+		{
+			"assignment" : "testng-suite-name-qa2-1",
+			"userId" : "888409690210371",
+			"userName" : "aadmin-qa2",
+			"password" : "QWEqwe123",
+			"firstName" : "fn",
+			"lastName" : "ln"
+		},
+		{
+			"assignment" : "testng-suite-name-qa2-2",
+			"userId" : "888409690210417",
+			"userName" : "aadmin-qa2-2",
+			"password" : "QWEqwe123",
+			"firstName" : "fn",
+			"lastName" : "ln"
+		}
+	],
+	"orgs" : [
+		{
+			"assignment" : "testng-suite-name-qa2-1",
+			"orgId" : "888409690210403",
+			"orgName" : "org-20150210140125-qa1"
+		},
+		{
+			"assignment" : "testng-suite-name-qa2-2",
+			"orgId" : "448605039100037",
+			"orgName" : "org-for-settings"
+		}
+	]
+}

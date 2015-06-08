@@ -1,0 +1,7 @@
+{
+	"environment" : "stage",
+	"managerPortalUrl" : "https://manager-stage.everbridge.net",
+	"apiUrl" : "https://api-stage.everbridge.net/rest",
+	"ebadminUrl" : "https://ebadmin-stage.everbridge.net",
+	"memberPortalUrl" : "https://member-stage.everbridge.net"
+}
